@@ -11,7 +11,6 @@ variable "prefix" {
 
 variable "region" {
   description = "The region where the resources are created."
-  default     = "us-east-1"
 }
 
 variable "address_space" {
@@ -45,6 +44,14 @@ variable "width" {
 }
 
 variable "placeholder" {
-  default     = "placekitten.com"
+  default     = "placedog.net"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
+
+variable "AWS_ACCESS_KEY_ID" {
+  description = "AWS_ACCESS_KEY_ID"
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  description = "AWS_SECRET_ACCESS_KEY"
 }
